@@ -1,54 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Freecam</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="container" class="hidden">
-        <div class="panel">
-
-            <div class="panel-header">
-                <div class="header-icon">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/>
-                        <circle cx="12" cy="13" r="3"/>
-                    </svg>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Freecam</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="container" class="hidden">
+            <div class="panel">
+                <div class="panel-header">
+                    <div class="header-icon">
+                        <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path
+                                d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                            />
+                            <circle cx="12" cy="13" r="3" />
+                        </svg>
+                    </div>
+                    <div class="header-text">
+                        <div class="header-title">Freecam</div>
+                        <div class="header-sub">Camera View</div>
+                    </div>
                 </div>
-                <div class="header-text">
-                    <div class="header-title">Freecam</div>
-                    <div class="header-sub">Simple camera mode</div>
+
+                <div class="stats">
+                    <div class="stat-row">
+                        <span class="stat-label">FOV</span>
+                        <span class="stat-value" id="fov">60°</span>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="controls-section">
+                    <div class="controls-title">Controls</div>
+                    <div class="controls-grid">
+                        <div class="ctrl-item">
+                            <kbd>W A S D</kbd><span>Move</span>
+                        </div>
+                        <div class="ctrl-item">
+                            <kbd>Q / E</kbd><span>Lift</span>
+                        </div>
+                        <div class="ctrl-item">
+                            <kbd>Mouse</kbd><span>Look</span>
+                        </div>
+                        <div class="ctrl-item">
+                            <kbd>Scroll</kbd><span>Zoom</span>
+                        </div>
+                        <div class="ctrl-item">
+                            <kbd>G</kbd><span>Reset</span>
+                        </div>
+                        <div class="ctrl-item">
+                            <kbd>H</kbd><span>Panel</span>
+                        </div>
+                        <div class="ctrl-item ctrl-exit">
+                            <kbd>Space</kbd><span>Exit</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="stats">
-                <div class="stat-row">
-                    <span class="stat-label">FOV</span>
-                    <span class="stat-value" id="fov">60°</span>
-                </div>
-            </div>
-
-            <div class="divider"></div>
-
-            <div class="controls-section">
-                <div class="controls-title">Controls</div>
-                <div class="controls-grid">
-                    <div class="ctrl-item"><kbd>W A S D</kbd><span>Move</span></div>
-                    <div class="ctrl-item"><kbd>Q / E</kbd><span>Up / Down</span></div>
-                    <div class="ctrl-item"><kbd>Mouse</kbd><span>Look</span></div>
-                    <div class="ctrl-item"><kbd>Scroll</kbd><span>Zoom</span></div>
-                    <div class="ctrl-item"><kbd>G</kbd><span>Reset camera</span></div>
-                    <div class="ctrl-item"><kbd>H</kbd><span>Toggle UI</span></div>
-                    <div class="ctrl-item ctrl-exit"><kbd>Space</kbd><span>Exit Freecam</span></div>
-                </div>
-            </div>
-
         </div>
-    </div>
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>

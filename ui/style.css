@@ -5,7 +5,12 @@
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family:
+        "Oswald",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
     background: transparent;
     color: #fff;
     overflow: hidden;
@@ -17,8 +22,10 @@ body {
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
-    width: 270px;
-    transition: opacity 0.2s ease, transform 0.2s ease;
+    width: 320px;
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
     z-index: 1000;
 }
 
